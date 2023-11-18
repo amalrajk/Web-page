@@ -1,0 +1,69 @@
+body,html{
+    margin:0;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    font-family: 'monteserrat';
+    background: #AA57CC;
+}
+section{
+    padding: 4em;
+    .gallery{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            
+        figure{
+                margin: 3px;
+                overflow: hidden;
+                position: relative;
+                background-color: yellow;
+                transition: background-color .5s;
+ 
+
+            img{
+                    width:500px;
+                    height:500px;
+                    opacity: .7; 
+                    transform: translate3d(0,-20px,0) scale(1,12);
+                    transition: all .5s;
+            }
+            figcaption{
+                position: absolute;
+                padding: 1em 2em;
+                top: 0;
+                color: #fff;
+                text-align: center;
+        
+                h3{
+                    font-weight: bold;
+                    font-size: 1,2em;
+                    text-transform: uppercase;  
+                    background: black;
+                    display: inline-block;
+                    padding: .5em .7em;
+
+                }
+                .additional{
+                    font-family: 'montserrat';  
+                    a{
+                        display: inline-block;
+                        background: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding: .5em;
+                        font-weight: bold;
+                        color: black;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+                    
+                
+
+    
